@@ -1,0 +1,365 @@
+@font-face {
+
+    font-family: 'Lobster';
+    
+    src: url(./Lobster-Regular.ttf); /* Путь к файлу со шрифтом */
+    
+}
+@font-face {
+
+    font-family: 'Nunito';
+
+    src: url(./Nunito-Bold.ttf);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    position: absolute;
+    width: 100%;
+    height: 4136px;
+    box-sizing: border-box;
+    background-color: #1D1D1D;
+}
+
+body::-webkit-scrollbar {width:0px;}
+
+.right__panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.right__panel-sticky {
+    position: sticky;
+    margin-left: auto;
+    margin-right: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: rgba(#000000, 0.7);
+    z-index: 10;
+    ul {
+        list-style-type: none;
+    }
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+}
+
+.header__blocks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header__border-first {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 4%;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: auto;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+}
+
+.header__border-second {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 84%;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: auto;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.header__border-three {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 4%;
+    margin-right: auto;
+    margin-top: 36%;
+    margin-bottom: auto;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.header__border-four {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 84%;
+    margin-right: auto;
+    margin-top: 36%;
+    margin-bottom: auto;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.slideshow {
+    max-width: 900px;
+    max-height: 70%;
+    height: 70%;
+    top: 15%;
+    position: relative;
+    border: 1px solid red;
+    z-index: 3;
+    margin-left: 15%;
+    margin-right: 19%;
+    margin-bottom: 50%;
+  }
+  
+  .mySlides {
+      display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+.text__block {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 496px;
+}
+
+.about__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000000, 0.6);
+}
+
+.about__block-title {
+    position: relative;
+    top: 2%;
+}
+
+.about__border-title {
+    position: absolute;
+    top: 23%;
+    left: 4%;
+    width: 5px;
+    height: 41px;
+    background-color: white;
+}
+
+.about__title {
+    position: relative;
+    left: 5%;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 60px;
+}
+
+.about__frame {
+    position: relative;
+    top: 5%;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 87%;
+    height: 70%;
+    border: 4px solid white;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    height: 1600px;
+}
+
+.services__block-title {
+    position: relative;
+    width: 87.5%;
+    height: 220px;
+    margin-left: 4%;
+    margin-right: auto;
+    border-bottom: 4px solid white;
+}
+
+.services__title {
+    position: relative;
+    top: 70px;
+    font-size: 50px;
+    font-family: Nunito;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.services__subtitle {
+    position: relative;
+    top: 80px;
+    font-size: 50px;
+    font-family: Nunito;
+    color: white;
+}
+
+.services__block-image {
+    position: relative;
+    width: 87.5%;
+    margin-left: 4%;
+    margin-right: auto;
+    border-bottom: 4px solid white;
+}
+
+.services__subblock-first {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.services__image-first {
+    position: relative;
+    margin-left: 0;
+    margin-right: 2.7%;
+    width: 250px;
+    height: 250px;
+}
+
+.services__image-second {
+    position: relative;
+    margin-left: 2.7%;
+    margin-right: 2.7%;
+    width: 250px;
+    height: 250px;
+}
+
+.services__image-three {
+    position: relative;
+    margin-left: 2.7%;
+    margin-right: 2.7%;
+    width: 250px;
+    height: 250px;
+}
+
+.services__image-four {
+    position: relative;
+    margin-left: 2.75%;
+    margin-right: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.services__subblock-second {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.services__subblock-three {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.services__subblock-four {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.portfolio__block-frame {
+    position: relative;
+    top: 5%;
+    width: 87%;
+    height: 84%;
+    margin-left: 4%;
+    margin-right: auto;
+    border: 4px solid white;
+}
+
+.portfolio__block-title {
+    position: relative;
+    width: 80%;
+    height: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 4px solid white;
+}
+
+.portfolio__title {
+    position: relative;
+    top: 10%;
+    font-size: 50px;
+    font-family: 'Nunito';
+    color: white;
+}
+
+.contacts {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.contacts__maps {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.contacts__form {
+    position: relative;
+}
